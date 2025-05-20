@@ -33,37 +33,12 @@
     button:hover {
       background-color: #090;
     }
-
-    #iframeContainer {
-      margin-top: 40px;
-      width: 90%;
-      height: 80vh;
-      margin-left: auto;
-      margin-right: auto;
-      display: none;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: 2px solid #0f0;
-    }
   </style>
 </head>
 <body>
   <h1>Will's Old Games</h1>
-  <button id="openGame">Launch Game Portal</button>
-
-  <div id="iframeContainer">
-    <iframe id="gameFrame" src="" allowfullscreen></iframe>
-  </div>
-
-  <script>
-    document.getElementById("openGame").addEventListener("click", function () {
-      const iframe = document.getElementById("gameFrame");
-      iframe.src = "https://sites.google.com/view/unblockzz666/home";
-      document.getElementById("iframeContainer").style.display = "block";
-    });
-  </script>
+  <button onclick="window.location.href='https://sites.google.com/view/unblockzz666/home'">
+    Launch Game Portal
+  </button>
 </body>
 </html>
