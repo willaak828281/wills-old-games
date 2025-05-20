@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will's Old Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Press Start 2P', monospace;
+      background-color: black;
+      color: #0f0;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 15px 25px;
+      font-size: 10px;
+      font-family: 'Press Start 2P', monospace;
+      background-color: #0f0;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #090;
+    }
+
+    #iframeContainer {
+      margin-top: 40px;
+      width: 90%;
+      height: 80vh;
+      margin-left: auto;
+      margin-right: auto;
+      display: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 2px solid #0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Will's Old Games</h1>
+  <button id="openGame">Launch Game Portal</button>
+
+  <div id="iframeContainer">
+    <iframe id="gameFrame" src="" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    document.getElementById("openGame").addEventListener("click", function () {
+      const iframe = document.getElementById("gameFrame");
+      iframe.src = "https://sites.google.com/view/unblockzz666/home";
+      document.getElementById("iframeContainer").style.display = "block";
+    });
+  </script>
+</body>
+</html>
